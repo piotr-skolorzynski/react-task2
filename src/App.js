@@ -1,7 +1,14 @@
+import Wrapper from "./Wrapper";
+import players from "./players";
+import PlayersList from "./PlayersList";
 
 function App() {
   return (
-    <h2>REACT TASK 2</h2>
+    <>
+      <Wrapper>
+        <PlayersList players={players} />
+      </Wrapper>
+    </>
   );
 }
 
