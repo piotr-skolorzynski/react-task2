@@ -1,24 +1,23 @@
 import Table from 'react-bootstrap/Table';
+import Player from './Player';
+import Statistics from './Statistics';
 
 const PlayersList = ({players}) => {
     return (   
-        <Table striped bordered hover variant="dark"> 
-            <thead>
+        <Table bordered variant="dark" className="table-wrapper"> 
+            <thead >
                 <tr>
-                <th>Username</th>
-                <th>Points</th>
+                    <th>Username</th>
+                    <th>Points</th>
                 </tr>
             </thead>
             <tbody>
                 {players.map(player => {
-                    const {id, username, points} = player;
                     return (
-                        <tr key={id}>
-                            <td>{username}</td>
-                            <td>{points}</td>
-                        </tr>
+                        <Player key={player.id} {...player} />
                     )
                 })}
+                <Statistics players={players} />
             </tbody>
         </Table>
     );

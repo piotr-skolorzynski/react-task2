@@ -7,7 +7,7 @@ const players = [
     {
         id: 2,
         username: 'Luigi',
-        points: 63
+        points: 65
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const players = [
     {
         id: 5,
         username: 'Smerfetka',
-        points: 87
+        points: 88
     },
     {
         id: 6,
