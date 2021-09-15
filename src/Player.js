@@ -1,9 +1,9 @@
-const Player = ({username, points}) => {
+const Player = ({username, points, highlightingColor}) => {
     return (
         <>
         <tr>
-            <td style={{backgroundColor: points>100?'red':'inherit', }}>{username}</td>
-            <td style={{backgroundColor: points>100?'red':'inherit'}}>{points}</td>
+            <td style={{backgroundColor: points > 100 ? `${highlightingColor}` : 'inherit', }}>{username}</td>
+            <td style={{backgroundColor: points > 100 ? `${highlightingColor}` : 'inherit'}}>{points}</td>
         </tr>
         </>
     );

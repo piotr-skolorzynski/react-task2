@@ -2,9 +2,9 @@ import Table from 'react-bootstrap/Table';
 import Player from './Player';
 import Statistics from './Statistics';
 
-const PlayersList = ({players}) => {
+const PlayersList = ({players, highlightingColor}) => {
     return (   
-        <Table bordered variant="dark" className="table-wrapper"> 
+        <Table borderless variant="dark" className="table-wrapper"> 
             <thead >
                 <tr>
                     <th>Username</th>
@@ -14,7 +14,7 @@ const PlayersList = ({players}) => {
             <tbody>
                 {players.map(player => {
                     return (
-                        <Player key={player.id} {...player} />
+                        <Player key={player.id} {...player} highlightingColor={highlightingColor} />
                     )
                 })}
                 <Statistics players={players} />

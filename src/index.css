@@ -27,3 +27,15 @@ body {
 .table-wrapper td {
     font-size: 2rem;
 }
+
+/* Buttons component */
+.buttons-container {
+    margin: 1rem 0;
+}
+
+.buttons-container button {
+    margin-right: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
