@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Wrapper from "./Wrapper";
-import PlayersList from "./PlayersList";
-import Buttons from './Buttons';
+import Wrapper from "./components/Wrapper";
+import PlayersList from "./components/PlayersList";
+import Buttons from './components/Buttons';
 
 function App() {
   const [highlightingColor, setHighlightingColor] = useState('#dc3545');
