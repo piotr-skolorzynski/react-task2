@@ -7,15 +7,13 @@ import PlayerRow from "./PlayerRow";
 import Statistics from "./Statistics";
 import "../assets/index.css";
 
-const url = "http://localhost:8000/players";
-
 const generateRandomInteger = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) - min).toString();
 };
 
-const Players = () => {
+const Players = ({ playersToFetch }) => {
   const [highlightingColor, setHighlightingColor] = useState("#dc3545");
   const [players, setPlayers] = useState(null);
   const [player, setPlayer] = useState({
@@ -23,6 +21,7 @@ const Players = () => {
     username: "",
     points: null,
   });
+  const url = `http://localhost:8000/${playersToFetch}`;
 
   const changeColorToDanger = () => {
     setHighlightingColor("#dc3545");
@@ -54,20 +53,20 @@ const Players = () => {
   };
 
   const removePlayer = (id) => {
-    console.log('do usunięcia player o id: ', id);
+    console.log(url, id);
     fetch(`${url}/${id}`, {
-      method: 'DELETE'
-    }).catch(err => console.log(err.message));
+      method: "DELETE",
+    }).catch((err) => console.log(err.message));
   };
 
   useEffect(() => {
-    fetch(url) //run json-server --watch public/players.json --port 8000
+    fetch(url) //run json-server --watch public/data/players.json --port 8000
       .then((res) => res.json())
       .then((data) => {
         setPlayers(data);
       })
       .catch((err) => console.log(err.message));
-  }, []);
+  }, [url]);
 
   return (
     <>

@@ -1,54 +1,55 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 #root {
-    min-height: 100vh;
-    background-color: #3a3a3a;
+  min-height: 100vh;
+  background-color: #3a3a3a;
 }
 
 /* Wrapper component */
 .app-container {
-    margin: 0 auto;
-    padding-top: 5rem;
-    max-width: 700px;
-    background-color: inherit;
+  margin: 0 auto;
+  padding-top: 5rem;
+  max-width: 700px;
+  background-color: inherit;
 }
 
 /* Table component */
 .table-wrapper thead {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 .table-wrapper td {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Buttons component */
 .buttons-container {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .buttons-container button {
-    margin-right: 1.5rem;
-    padding: 1rem 2.5rem;
-    font-size: 1.6rem;
-    font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 /* Form */
 
 .field-wrapper {
-    font-size: 2rem;
-    color: #fff;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .form-addplayer button {
-    padding: 1rem 2.5rem;
-    font-size: 1.6rem;
-    font-weight: bold;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }

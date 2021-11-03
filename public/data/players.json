@@ -41,11 +41,6 @@
       "points": "112"
     },
     {
-      "id": "9",
-      "username": "Catwoman",
-      "points": "130"
-    },
-    {
       "id": "55846",
       "username": "Kapitan Bomba",
       "points": "128"
@@ -54,6 +49,49 @@
       "id": "49604",
       "username": "Kapitan Majtas",
       "points": "124"
+    },
+    {
+      "id": "38703",
+      "username": "Ninja",
+      "points": "143",
+      "publicId": "data"
+    },
+    {
+      "id": "72568",
+      "username": "Catwoman",
+      "points": "192"
+    }
+  ],
+  "new_players": [
+    {
+      "id": "2",
+      "username": "Krzysztof",
+      "points": "65"
+    },
+    {
+      "id": "3",
+      "username": "Marlena",
+      "points": "32"
+    },
+    {
+      "id": "4",
+      "username": "Paweł",
+      "points": "56"
+    },
+    {
+      "id": "5",
+      "username": "Karolina",
+      "points": "88"
+    },
+    {
+      "id": "7567",
+      "username": "Songo Ku",
+      "points": "107"
+    },
+    {
+      "id": "65251",
+      "username": "Kapitan Bomba",
+      "points": "46"
     }
   ]
 }

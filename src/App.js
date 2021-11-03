@@ -10,10 +10,10 @@ function App() {
         <Navigation />
         <Switch>
           <Route path="/players">
-            <Players />
+            <Players playersToFetch="players"/>
           </Route>
           <Route path="/newplayers">
-            <Players/>
+            <Players playersToFetch="new_players" />
           </Route>
         </Switch>
       </Wrapper>
