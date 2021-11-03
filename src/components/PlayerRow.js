@@ -2,6 +2,7 @@ const PlayerRow = ({ id, username, points, highlightingColor, onRemove }) => {
   const onRemoveButtonClick = (id) => {
     onRemove(id);
   };
+
   return (
     <>
       <tr>

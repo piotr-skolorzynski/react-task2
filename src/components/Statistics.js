@@ -15,7 +15,7 @@ const Statistics = ({players}) => {
         </tr>
         <tr>
             <td>Average</td>
-            <td>{(total / pointsArray.length).toFixed(2)}</td>
+            <td>{(total / pointsArray.length).toFixed()}</td>
             <td></td>
         </tr>
         </>
