@@ -39,3 +39,16 @@ body {
     font-size: 1.6rem;
     font-weight: bold;
 }
+
+/* Form */
+
+.field-wrapper {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.form-addplayer button {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}

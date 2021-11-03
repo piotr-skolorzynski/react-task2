@@ -1,6 +1,6 @@
 const Statistics = ({players}) => {
     
-    const pointsArray = players.map(player => player.points);  
+    const pointsArray = players.map(player => Number(player.points));  
 
     const total = pointsArray.reduce((sum, next) => {
         return sum + next;
@@ -11,10 +11,12 @@ const Statistics = ({players}) => {
         <tr>
             <td>Total</td>
             <td>{total}</td>
+            <td></td>
         </tr>
         <tr>
             <td>Average</td>
-            <td>{total / pointsArray.length}</td>
+            <td>{(total / pointsArray.length).toFixed(2)}</td>
+            <td></td>
         </tr>
         </>
     );
