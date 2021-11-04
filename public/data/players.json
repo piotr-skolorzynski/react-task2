@@ -69,11 +69,6 @@
       "points": "65"
     },
     {
-      "id": "3",
-      "username": "Marlena",
-      "points": "32"
-    },
-    {
       "id": "4",
       "username": "Paweł",
       "points": "56"
@@ -92,6 +87,26 @@
       "id": "65251",
       "username": "Kapitan Bomba",
       "points": "46"
+    },
+    {
+      "id": "72753",
+      "username": "Ninja Go",
+      "points": "152"
+    },
+    {
+      "id": "39413",
+      "username": "Wiesiek",
+      "points": "19"
+    },
+    {
+      "id": "13754",
+      "username": "Stokrotka",
+      "points": "65"
+    },
+    {
+      "id": "42608",
+      "username": "Janusz Polski",
+      "points": "110"
     }
   ]
 }
